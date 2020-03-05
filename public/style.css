@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color:rgb(103, 134, 173);
+    background-color:rgb(24, 35, 49);
     font-family: 'Roboto', sans-serif ;
 }
 
@@ -16,7 +16,7 @@ header{
     width:100%;
     padding: 25px;
     text-align: center;
-    background-color: rgb(126, 149, 177);
+    background-color: rgba(255,255,255,0.05);
     box-sizing: border-box;
 }
 
@@ -33,18 +33,19 @@ header{
     position: relative;
 }
 .links a:hover{
-    color:rgb(63, 78, 95);
+    color:rgb(139, 148, 158);;
     transition: color 200ms;
 }
 .links a.active{
     font-weight: bold;
-    color:rgb(63, 78, 95);
+    font-size:22px;
+    color:rgb(184, 191, 199);
 }
 .links a::after{
     content:"";
     width:0;
     height:2px;
-    background-color: rgb(63, 78, 95);
+    background-color: rgb(139, 148, 158);
     position: absolute;
     left:0;
     bottom:-4px;
@@ -57,9 +58,9 @@ header{
 
 /* CARD */
 .card{
-    height: 500px;
+    height: 600px;
     width:860px;
-    background-color: rgb(219, 228, 233);
+    background-color: rgb(223, 227, 230);
     margin: 60px auto;
     box-shadow: 2px 2px 1px rgba(0,0,0,.4);
     display: grid;
@@ -72,13 +73,16 @@ header{
 @keyframes up{
     from{
         opacity: 0;
-        transform: translateY(15px)
+        transform: translateY(200px)
     }
     to{
         opacity: 1;
     }
 }
 
+.card .image{
+    border-radius:15px 0 0 0;
+}
 .details{
     padding:22px;
 }
@@ -104,7 +108,7 @@ header{
 
 .details .item span{
     padding:8px 16px;
-    background-color: rgb(140, 103, 148);
+    background-color: rgb(74, 65, 77);
     display: inline-block;
     border-radius:10px;
     margin-right:15px;
@@ -112,3 +116,49 @@ header{
 }
 
 /* ANIMATION */
+
+
+/* FORM */ 
+
+input{
+    background-color:transparent;
+    font-weight: bold;
+    width: 100%;
+    outline: none;
+    font-size:14px;
+}
+
+input[type="date"]{
+    width:initial;
+}
+
+input[type="radio"]{
+    width:initial;
+    margin-right:4px;  
+}
+
+select{
+    background-color: white;
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top:5px;
+    font-weight: bold;
+    color:rgb(105, 103, 103)
+}
+
+option{
+    color:rgb(105, 103, 103)
+}
+
+button{
+    margin-top:20px;
+    width: 100%;
+    padding: 18px;
+    font-weight: bold;
+    font-size: 16px;
+    color:white;
+    background-color: rgb(74, 65, 77);
+    border-radius: 10px;
+    cursor: pointer;
+}
