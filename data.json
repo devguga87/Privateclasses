@@ -1,0 +1,13 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Gustavo Seabra Silva",
+      "birth": 601171200000,
+      "escolarity": "valor3",
+      "type": "D",
+      "classes": "programação",
+      "created_at": 1583406810669
+    }
+  ]
+}
