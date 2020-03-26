@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+<title>Private Classes - Home Page</title>
+{% endblock title %}
+
+{% block content %}
+<div class="card table-container">
+    <table>
+    <thead>
+        <tr>
+            <th>Teacher</th>
+            <th>Escolaridade</th>
+            <th>Classes</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for teacher in teachers%}
+        <tr>
+            <td><span style="background-image:url({{teacher.avatar_url}})"></span> {{teacher.name}}</td>
+            <td>{{teacher.classes}}</td>
+            <td>{{ teacher.escolarity }}</td>
+            <td><a href="/teachers/{{teacher.id}}">VER</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+</div>
+{% endblock content %}

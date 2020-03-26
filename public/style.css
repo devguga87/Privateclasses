@@ -58,8 +58,10 @@ header{
 
 /* CARD */
 .card{
-    height: 600px;
-    width:860px;
+    min-height: 400px;
+    max-height: 700px;
+    min-width: 200px;
+    max-width:760px;
     background-color: rgb(223, 227, 230);
     margin: 60px auto;
     box-shadow: 2px 2px 1px rgba(0,0,0,.4);
@@ -78,6 +80,68 @@ header{
     to{
         opacity: 1;
     }
+}
+
+.table-container{
+    display: block;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.table-container table{
+    border-spacing: 0;
+}
+
+.table-container thead tr th{
+    text-align: left;
+}
+
+.table-container thead tr th:last-child,   
+td:last-child{
+    text-align:center;
+}
+
+td,th{
+    padding: 16px;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+th{
+    text-transform: uppercase;
+    color:rgb(56, 68, 77);
+}
+
+tbody tr td:last-child a{
+    padding:10px;
+    border-radius: 5px;
+    background-color: rgb(57, 100, 134);
+    text-decoration: none;
+    color:white;
+    font-size: 12px;
+    font-weight: bold;;
+}
+
+td a:hover{
+    background-color: rgb(28, 55, 75);
+}
+
+tbody tr:last-child td{
+    border-bottom:none;
+}
+
+tbody tr td:first-child{
+    display:grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+
+tbody tr  span{
+    width:48px;
+    height:48px;
+    background-position: center;
+    background-size:cover;
+    border-radius:10px;
+    border:2px solid rgb(214, 210, 210);
 }
 
 .card .image{
@@ -151,7 +215,8 @@ option{
     color:rgb(105, 103, 103)
 }
 
-button{
+button,
+a.button{
     margin-top:20px;
     width: 100%;
     padding: 18px;
@@ -161,4 +226,21 @@ button{
     background-color: rgb(74, 65, 77);
     border-radius: 10px;
     cursor: pointer;
+}
+
+#delete {
+    margin-top:8px;
+    background-color: rgb(167, 99, 99);
+}
+
+a.button{
+    display: block;
+    box-sizing:border-box;
+    text-align: center;
+    text-decoration: none
+}
+
+a.button:hover,
+button:hover{
+    background-color:rgba(74, 65, 77,.8);
 }
