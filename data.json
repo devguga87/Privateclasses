@@ -2,12 +2,34 @@
   "teachers": [
     {
       "id": 1,
-      "name": "Gustavo Seabra Silva",
-      "birth": 601171200000,
-      "escolarity": "valor3",
+      "name": "Samuel",
+      "avatar_url": "https://hospitaldorimse.com.br/wp-content/uploads/2018/01/DR.-PEDRO-BIBIANO.jpg",
+      "birth": 537408000000,
+      "escolarity": "mestre",
       "type": "D",
-      "classes": "programação",
-      "created_at": 1583406810669
+      "classes": "asas ,dfdf",
+      "created_at": 1585188434799
+    },
+    {
+      "id": 2,
+      "name": "Giovana Almeida",
+      "avatar_url": "https://s2.glbimg.com/RmnxOIW3MYk1soDp1JSCpABwDdw=/e.glbimg.com/og/ed/f/original/2016/07/04/abracopai.jpg",
+      "birth": 537408000000,
+      "escolarity": "doutor",
+      "type": "P",
+      "classes": "as, mum",
+      "created_at": 1585233093317
+    },
+    {
+      "id": 3,
+      "name": "Natalia Almeida Seabra Silva",
+      "avatar_url": "https://www.google.com.br/url?sa=i&url=http%3A%2F%2Fwww.luminalaser.com.br%2F%3F_escaped_fragment_%3Ddulcilea-ferraz-rodrigues%2Fc1cb3&psig=AOvVaw2n_hWHy0361J_eP6VJ5Hdf&ust=1585320036137000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCrnMOvuOgCFQAAAAAdAAAAABAD",
+      "birth": 537408000000,
+      "escolarity": "doutor",
+      "type": "P",
+      "classes": "play hard, go pro",
+      "created_at": 1585233730936
     }
-  ]
+  ],
+  "students":[]
 }
