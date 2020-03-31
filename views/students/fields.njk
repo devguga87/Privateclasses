@@ -1,0 +1,46 @@
+<div class="item">
+    <div>Avatar url</div>
+        <div>
+            <input type="url" name="avatar_url" id="" placeholder="https://" value="{{ student.avatar_url }}">
+        </div>
+    </div>
+    
+    <div class="item">
+        <div>Nome</div>
+        <div>
+            <input type="text" name="name" id="" placeholder="Seu nome aqui" value="{{ student.name }}">
+        </div>
+    </div>
+    
+
+    <div class="item">
+        <div>Email</div>
+        <div>
+            <input type="email" name="email" id=""  value="{{ student.email }}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Idade</div>
+        <div>
+            <input type="date" name="birth" id="" value="{{ student.birth }}">
+        </div>
+    </div>
+    
+    <div class="item">
+        <div>Tipo de aula</div>
+        <div>
+            <span><input type="radio" value="P" name="type" id="" {% if student.type == "P" %} checked{% endif %}>Presencial</span>
+            <span><input type="radio" value="D" name="type" id="" {% if student.type == "D" %} checked{% endif %}>À distância</span>
+        </div>
+    </div>
+    
+    <div class="item">
+        <div>Cursos</div>
+        <div>
+            <input type="text" name="classes" id="" placeholder="Separe cursos por virgula" value="{{ student.classes}}">
+        </div>
+    </div>
+ 
+    <button type="submit">Salvar</button>
+    

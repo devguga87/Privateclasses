@@ -1,6 +1,6 @@
 const express = require('express')
-const teachers = require('./teachers')
-const students = require('./students')
+const teachers = require('./controllers/teachers')
+const students = require('./controllers/students')
 const routes = express.Router()
 
 routes.get("/", function(req,res){
@@ -31,3 +31,4 @@ routes.delete('/students', students.delete)
 
 
 module.exports = routes
+

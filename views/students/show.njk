@@ -1,0 +1,43 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+<title>Private Classes - Home Page</title>
+{% endblock title %}
+
+{% block content %}
+<div class="card">
+    <section class="image" style="background:url({{student.avatar_url}}) no-repeat center center / cover">
+    </section>
+    <section class="details">
+    <div class="item">
+        <div>Nome</div>
+        <div>{{ student.name }}</div>
+    </div>
+    <div class="item">
+        <div>Idade</div>
+        <div>{{ student.age }}</div>
+    </div>
+    <div class="item">
+        <div>Grau de Escolaridade</div>
+        <div>{{ student.escolarity}}</div>
+    </div>
+    <div class="item">
+        <div>Tipo de aula</div>
+        <div>{{"Presencial" if student.type == "P" else "À distância" }}</div>
+    </div>
+    <div class="item">
+        <div>Acompanhamento</div>
+        <div>
+        {% for class in student.classes %}
+            <span>{{ class }}</span>
+        {% endfor %}
+        </div>
+    </div>
+    <div class="item">
+        <div>Desde</div>
+        <div>{{ student.created_at}}</div>
+    </div>
+    <a href="/students/{{student.id}}/edit" class="button">Editar</a>
+    </section>
+</div>
+{% endblock content %}

@@ -1,0 +1,35 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+<title>Private Classes - Home Page</title>
+{% endblock title %}
+
+{% block content %}
+
+<div class="card table-container">
+
+    <table>
+    <thead>
+        <tr>
+            <th>Estudante</th>
+            <th>Email</th>
+            <th>Cursos</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for student in students%}
+        <tr>
+            <td><span style="background-image:url({{student.avatar_url}})"></span> {{student.name}}</td>
+            <td>{{ student.email }}</td>
+            <td>{{student.classes}}</td>
+            <td><a href="/students/{{student.id}}">VER</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+    <div id="create">
+        <a href="/students/create">NOVO</a>
+    </div>
+</div>
+{% endblock content %}
