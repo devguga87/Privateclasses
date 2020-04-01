@@ -6,7 +6,7 @@
 
 {% block content %}
 <div class="card">
-    <section class="image" style="background:url({{student.avatar_url}}) no-repeat center center / cover">
+    <section class="image" style="background:url({{student.avatarUrl}}) no-repeat center center / cover">
     </section>
     <section class="details">
     <div class="item">
@@ -35,7 +35,7 @@
     </div>
     <div class="item">
         <div>Desde</div>
-        <div>{{ student.created_at}}</div>
+        <div>{{ student.createdAt}}</div>
     </div>
     <a href="/students/{{student.id}}/edit" class="button">Editar</a>
     </section>
