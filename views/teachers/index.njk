@@ -18,7 +18,7 @@
     <tbody>
         {% for teacher in teachers%}
         <tr>
-            <td><span style="background-image:url({{teacher.avatar_url}})"></span> {{teacher.name}}</td>
+            <td><span style="background-image:url({{teacher.avatarUrl}})"></span> {{teacher.name}}</td>
             <td>{{teacher.classes}}</td>
             <td>{{ teacher.escolarity }}</td>
             <td><a href="/teachers/{{teacher.id}}">VER</a></td>

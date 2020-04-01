@@ -20,7 +20,7 @@
     <tbody>
         {% for student in students%}
         <tr>
-            <td><span style="background-image:url({{student.avatar_url}})"></span> {{student.name}}</td>
+            <td><span style="background-image:url({{student.avatarUrl}})"></span> {{student.name}}</td>
             <td>{{ student.email }}</td>
             <td>{{student.classes}}</td>
             <td><a href="/students/{{student.id}}">VER</a></td>
